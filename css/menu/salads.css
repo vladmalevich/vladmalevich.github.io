@@ -1,0 +1,17 @@
+.container_salad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+  }
+  
+  .wrapper_salad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .salad_img {
+    padding-left: 40px;
+  }

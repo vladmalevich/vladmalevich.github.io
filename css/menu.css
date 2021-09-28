@@ -1,0 +1,23 @@
+.container_menu,
+.menu {
+  display: flex;
+}
+
+.menu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex: 3 1 100px;
+}
+
+.menu_img {
+  flex: 1 1 100px;
+  padding: 35px 0 35px 120px;
+  display: grid;
+  grid-template: 194px 194px / 194px 194px;
+  grid-template-areas:
+    "one two"
+    "three four";
+  grid-gap: 30px;
+}

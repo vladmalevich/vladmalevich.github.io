@@ -1,0 +1,72 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  color: var(--color-font);
+  height: 300px;
+}
+
+.footer_name {
+  font-family: Rye;
+  font-size: 50px;
+  line-height: 70px;
+  color: var(--color-font);
+  margin: 40px 0 0 0;
+  border-bottom: var(--border-par);
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.container_icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 120px 20px 120px;
+  padding: 14px 35px 0 35px;
+  border-top: var(--border-par);
+}
+
+.nav,
+.container_bosco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_items {
+  color: var(--color-font);
+  position: relative;
+  margin-left: 35px;
+  text-decoration: none;
+  font-family: Sahitya;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.container_bosco {
+  flex-direction: column;
+}
+
+.bosco_rest {
+  font-family: Sahitya;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.nav {
+  margin-bottom: 30px;
+}
+
+.nav_icons > svg {
+  margin-left: 25px;
+}
+
+.nav a:nth-child(1) {
+  margin-left: 0;
+}

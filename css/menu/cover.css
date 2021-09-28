@@ -1,0 +1,43 @@
+:root {
+  --border-set: 1px solid #0d1217;
+}
+
+.container_cover,
+.wrapper_menu {
+  display: flex;
+}
+
+.container_cover {
+  justify-content: center;
+}
+
+.wrapper_menu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 730px;
+  margin-right: 20px;
+}
+
+.text_cover {
+  margin-top: 32px;
+  font-family: Sahitya;
+  font-size: 21px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.name_4 {
+  font-family: Rye;
+  font-size: 48px;
+  line-height: 60px;
+  border-bottom: 3px solid black;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.dish {
+  width: 660px;
+  height: 733px;
+}

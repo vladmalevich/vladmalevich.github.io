@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sahitya&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
+:root {
+  --color-font: #f1f1f1;
+  --color-background: #0d1217;
+  --border-par: 3px solid #f1f1f1;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F1F1F1;
+}

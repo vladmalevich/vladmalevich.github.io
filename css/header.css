@@ -1,0 +1,58 @@
+:root {
+  --color-type: #0d1217;
+  --border-opt: 1px solid #0d1217;
+}
+
+header {
+  height: 100px;
+}
+
+.navigation,
+.container_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_item {
+  color: var(--color-type);
+  position: relative;
+  margin-left: 35px;
+  text-decoration: none;
+  font-family: Sahitya;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.container_navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 120px 40px 120px;
+}
+
+.container_logo {
+  flex-direction: column;
+}
+
+.name_3 {
+  font-family: Rye;
+  color: var(--color-type);
+  position: relative;
+  font-size: 30px;
+  line-height: 37px;
+  border-bottom: 2px solid black;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation a:nth-child(1) {
+  border-bottom: 2px black solid;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

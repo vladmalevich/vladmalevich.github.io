@@ -1,0 +1,21 @@
+.container_reservation,
+.reservation {
+  display: flex;
+}
+
+.reservation {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  flex: 2 1 100px;
+}
+
+.reservation_img {
+  flex: 1 1 450px;
+  padding: 47px 0 47px 0;
+}
+
+.reservation_img img:nth-child(1) {
+  margin-right: 30px;
+}

@@ -1,0 +1,43 @@
+.container_cook {
+  position: relative;
+  background: url(../images/cook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container_cook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0.5;
+}
+
+.cook {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cook > h1 {
+  font-family: Rye;
+  font-size: 96px;
+  line-height: 120px;
+  color: var(--color-font);
+}
+
+.cook > p {
+  font-family: Sahitya;
+  font-size: 64px;
+  line-height: 99px;
+  color: var(--color-font);
+}

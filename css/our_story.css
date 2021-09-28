@@ -1,0 +1,84 @@
+:root {
+  --border-set: 1px solid #0d1217;
+}
+
+.container_story,
+.our_story {
+  display: flex;
+}
+
+.our_story {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 409px;
+  flex: 3 1 100px;
+  background: url(/icons/mango.png) no-repeat 10% 5%,
+    url(/icons/half.png) no-repeat 30% 5%,
+    url(/icons/cheese.png) no-repeat 50% 5%,
+    url(/icons/cheese_2.png) no-repeat 70% 5%,
+    url(/icons/mango.png) no-repeat 90% 5%,
+    url(/icons/half.png) no-repeat 3% 55%,
+    url(/icons/mango.png) no-repeat 23% 55%,
+    url(/icons/half.png) no-repeat 43% 55%,
+    url(/icons/cheese.png) no-repeat 63% 55%,
+    url(/icons/cheese_2.png) no-repeat 83% 55%,
+    url(/icons/mango.png) no-repeat 10% 105%,
+    url(/icons/half.png) no-repeat 30% 105%,
+    url(/icons/cheese.png) no-repeat 50% 105%,
+    url(/icons/cheese_2.png) no-repeat 70% 105%,
+    url(/icons/mango.png) no-repeat 90% 105%;
+}
+
+.fish_img {
+  flex: 2 1 100px;
+  padding: 0 111px 17px 0;
+}
+
+.disc,
+.name_article,
+.desc,
+.view {
+  text-align: center;
+}
+
+.name_article,
+.desc {
+  margin-bottom: 45px;
+}
+
+.disc {
+  font-family: Rye;
+  font-size: 48px;
+}
+
+.name_article,
+.desc,
+.view {
+  font-family: Sahitya;
+}
+
+.name_article {
+  font-size: 48px;
+  line-height: 75px;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.view {
+  font-size: 36px;
+  line-height: 56px;
+}
+
+.line_3 {
+  width: 180px;
+  border: var(--border-set);
+}
+
+.fish {
+  border-radius: 5px;
+  padding-top: 15px;
+}
