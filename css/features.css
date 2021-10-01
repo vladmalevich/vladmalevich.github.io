@@ -1,0 +1,140 @@
+/*header*/
+.header {
+  position: relative;
+  background-image: url(/images/back_features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1976px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0.5;
+}
+
+.nav a:nth-child(3) {
+  text-decoration: underline;
+}
+
+.nav,
+.container_heading,
+.container_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_items {
+  color: var(--color-font);
+  position: relative;
+  margin-left: 35px;
+  text-decoration: none;
+  font-family: Sahitya;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.nav_items:hover {
+  text-decoration: underline;
+  color: var(--hover-nav-color);
+}
+
+.container_nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 120px 0 120px;
+}
+
+.container_name {
+  flex-direction: column;
+}
+
+.name {
+  font-family: Rye;
+  color: var(--color-font);
+  position: relative;
+  font-size: 30px;
+  line-height: 37px;
+  border-bottom: var(--border-par);
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+/*header*/
+
+/*content*/
+.container_heading {
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.heading_style {
+  position: relative;
+  font-family: Rye;
+  color: var(--color-font);
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 65px;
+}
+
+.description_style {
+  font-family: Sahitya;
+  color: var(--color-font);
+  font-size: 24px;
+  line-height: 37px;
+  margin-bottom: 250px;
+}
+
+.container_title {
+  text-align: center;
+}
+
+.wrapper_features {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 170px;
+}
+
+.wrapper_features > div {
+  margin-bottom: 50px;
+}
+
+.caption {
+  font-family: Sahitya;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  color: var(--color-font);
+}
+
+.caption_indent {
+  padding-top: 5px;
+}
+
+.img_transform {
+  transition: 0.5s;
+}
+
+.img_transform:hover {
+  transform: scale(1.1);
+}
+
+.wrapper_indent {
+  margin-bottom: 50px;
+}
+/*content*/

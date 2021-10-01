@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOSCO</title>
+    <title>BOSCO Reservation</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main_page.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main_page.css" />
 </head>
 
 <body>
-
-    <header class="header_main">
+    <header class="header">
         <div class="container_nav">
             <div class="container_name">
                 <a href="index.html" class="name">BOSCO</a>
@@ -28,78 +28,67 @@
         </div>
         <div class="container_welcome">
             <p class="welcome">Welcome</p>
-            <h1 class="heading_name">BOSCO</h1>
-            <p class="ready">Ready to open</p>
+            <h1 class="welcome_heading">BOSCO reservation</h1>
+            <span class="line_reservation"></span>
         </div>
     </header>
 
     <main>
-        <section class="container_story">
-            <div class="wrapper_story">
-                <h2 class="disc">Discover</h2>
-                <p class="name_article">our story</p>
-                <p class="desc">
-                    Bosco is a restaurant, bar and coffee roastery located on a busy corner site<br>
-                    in Farrington’s Market. With glased frontage on two sides of the building?<br>
-                    overlooking the market and abustiling city intersection.
+        <section class="container_gallery">
+            <h1 class="gallery_heading">Gallery</h1>
+            <div class="wrapper_gallery">
+                <img src="images/restaurant_1.png" alt="inside" />
+                <img src="images/restaurant_2.png" alt="inside" />
+                <img src="images/restaurant_3.png" alt="inside" />
+                <img src="images/restaurant_4.png" alt="inside" />
+                <img src="images/restaurant_5.png" alt="inside" />
+            </div>
+            <div class="gallery_text">
+                <p>
+                    BOSCO is one of the most popular establishments from well-known<br>
+                    metropolitan restaurateurs. From 2013 to 2015, BOSCO was recognized as the<br>
+                    "Best Restaurant" according to the "36 Favorite Places of the City" award, and in<br>
+                    2014 - according to the "Golden Chef" restaurant and gastronomic award. Visitors<br>
+                    choose BOSCO for the high level of service, delicious cuisine and European<br>
+                    atmosphere.
                 </p>
-                <a href="features.html" class="view">About our story</a>
-                <span class="link_underline"></span>
-            </div>
-            <div class="fish_img">
-                <img src="images/fish.png" alt="fish" class="fish" />
             </div>
         </section>
 
-        <section class="container_recipes_cook">
-            <div class="wrapper_heading">
-                <h1>Tasteful</h1>
-                <p>recipes</p>
-            </div>
-        </section>
-
-        <section class="container_menu">
-            <div class="menu_imgs">
-                <img src="/images/hamburger.png" alt="hamburger" class="food_items" />
-                <img src="/images/pasta.png" alt="pasta" class="food_items" />
-                <img src="/images/meat.png" alt="meat" class="food_items" />
-                <img src="/images/steak.png" alt="steak" class="food_items" />
-            </div>
-            <div class="wrapper_menu">
-                <h2 class="disc">Discover</h2>
-                <p class="name_article">menu</p>
-                <p class="desc">
-                    For those with pure food indulgense in mind, come next door and sate<br>
-                    your desires with our ever changing internationally and seasonally<br>
-                    inspired small plates. We love food, lots of different food, just like you.
-                </p>
-                <a href="menu.html" class="view">View the full menu</a>
-                <span class="link_underline"></span>
-            </div>
-        </section>
-
-        <section class="container_cook container_recipes_cook">
-            <div class="wrapper_heading">
-                <h1>What to cook</h1>
-                <p>today?</p>
-            </div>
-        </section>
-
-        <section class="container_reservation">
-            <div class="reservation">
-                <h2 class="disc">Culinary</h2>
-                <p class="name_article">delight</p>
-                <p class="desc">
-                    We promise in intimate and relax dining experience that offers something<br>
-                    different to local and foreign patrons and ensures you enjoy a memorible<br>
-                    food experience every time.
-                </p>
-                <a href="reservation.html" class="view">Make a reservation</a>
-                <span class="link_underline"></span>
-            </div>
-            <div class="reservation_img">
-                <img src="/images/cancer.png" alt="cancer" class="res_img" />
-                <img src="/images/wine.png" alt="wine" class="res_img" />
+        <section class="container_form">
+            <div class="wrapper_form">
+                <h1 class="form_heading">Make a reservation</h1>
+                <span class="line_reservation line_indent"></span>
+                <form action="https://getform.io/f/390da523-9612-4f95-a1dd-fb42ab97a73c" class="form_font">
+                    <div class="date_person">
+                        <div class="date">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date_time" />
+                            <label for="date">The nearest date booking - 25 August.</label>
+                        </div>
+                        <div class="number_person">
+                            <label for="number">Number of persons:</label>
+                            <input type="number" id="number" name="number_person" placeholder="1 - 10" />
+                        </div>
+                    </div>
+                    <div class="wishes">
+                        <label for="wish">Your wishes for your reservation:</label>
+                        <input type="text" id="wish" name="wishes" placeholder="I want ..." />
+                    </div>
+                    <div class="name_surname">
+                        <label for="name">Name, surname:</label>
+                        <input type="text" id="name" name="name_surname" placeholder="Thierry Henry" />
+                    </div>
+                    <div class="phone_number">
+                        <div class="phone_length">
+                            <label for="phone">Phone number:</label><br>
+                            <input type="tel" id="phone" name="phone_number" placeholder="+375 (29) 123-45-67" />
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Book now">
+                    </div>
+                </form>
             </div>
         </section>
     </main>

@@ -1,23 +1,223 @@
-.container_menu,
-.menu {
+/*cover*/
+.container_cover,
+.wrapper_cover,
+.heading_menu,
+.text_cover {
   display: flex;
+  justify-content: center;
 }
 
-.menu {
+.wrapper_cover {
   flex-direction: column;
+  align-items: center;
+  height: 730px;
+  margin-right: 20px;
+}
+
+.text_cover {
+  margin-top: 32px;
+  font-family: Sahitya;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.heading_menu {
+  font-family: Rye;
+  font-size: 48px;
+  line-height: 60px;
+  border-bottom: var(--border-bottom-set);
+  width: 100px;
+}
+/*cover*/
+
+/*pizza*/
+.container_pizza,
+.wrapper_pizza {
+  display: flex;
+  justify-content: center;
+}
+
+.container_pizza {
+  padding-bottom: 64px;
+}
+
+.wrapper_pizza {
+  flex-direction: column;
+  align-items: center;
+}
+
+.pizza_img {
+  padding: 111px 50px 0 0;
+}
+
+.pizza_pic {
+  width: 557px;
+  height: 861px;
+}
+
+.composition,
+.name_price {
+  font-family: Sahitya;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.name_price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 8px 0;
+}
+/*pizza*/
+
+/*salads*/
+.container_salad, .wrapper_salad {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  flex: 3 1 100px;
+  height: 800px;
 }
 
-.menu_img {
-  flex: 1 1 100px;
-  padding: 35px 0 35px 120px;
-  display: grid;
-  grid-template: 194px 194px / 194px 194px;
-  grid-template-areas:
-    "one two"
-    "three four";
-  grid-gap: 30px;
+.container_salad {
+  height: 800px;
 }
+
+.wrapper_salad {
+  flex-direction: column;
+}
+
+.salad_img {
+  padding-left: 40px;
+}
+/*salads*/
+
+/*dishes*/
+.container_dishes, .wrapper_dishes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_dishes {
+  margin-bottom: 64px;
+}
+
+.wrapper_dishes {
+  flex-direction: column;
+}
+
+.dishes_img {
+  padding: 300px 30px 0 0;
+}
+
+.composition, .name_price {
+  font-family: Sahitya;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.name_price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.heading_dish {
+  font-family: Rye;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.line_dish {
+  width: 90px;
+  margin-bottom: 25px;
+  border-bottom: var( --border-bottom-set);
+}
+
+.main_dish {
+  position: relative;
+  z-index: 1;
+}
+/*dishes*/
+
+/*images*/
+.container_imgs {
+  height: 750px;
+}
+
+.wrapper_imgs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pork_ribs, .plate {
+  position: absolute;
+}
+
+.pork_ribs {
+  top: -160px;
+  left: 160px;
+}
+
+.plate {
+  top: 220px;
+  left: 850px;
+}
+/*images*/
+
+/*sauces*/
+.container_sauces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper_sauces {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.sauce, .drinks, .coffee_tea {
+  margin: 0 auto;
+}
+/*sauces*/
+
+/*drinks*/
+.container_drinks {
+  margin: 65px 0;
+}
+
+.container_coffee_tea,
+.drinks,
+.coffee_tea {
+  margin-bottom: 50px;
+}
+
+.wrapper_tea_coffee {
+  width: 535px;
+}
+
+.coffee_tea {
+  font-family: Rye;
+  border-bottom: var(--border-bottom-set);
+  font-size: 33px;
+  line-height: 30px;
+  width: 50px;
+}
+
+.container_coctails,
+.container_coffee_tea,
+.coffee_tea {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper_coctails,
+.wrapper_tea_coffee {
+  margin: 0 30px;
+}
+/*drinks*/

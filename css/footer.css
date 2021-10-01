@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,24 +11,22 @@ footer {
   font-family: Rye;
   font-size: 50px;
   line-height: 70px;
-  color: var(--color-font);
-  margin: 40px 0 0 0;
+  margin-top: 40px;
   border-bottom: var(--border-par);
   width: 130px;
-  display: flex;
-  justify-content: center;
 }
 
 .container_icons {
   display: flex;
   justify-content: space-between;
-  margin: 0 120px 20px 120px;
-  padding: 14px 35px 0 35px;
+  margin: 30px 120px 0 120px;
+  padding: 14px 35px 20px 35px;
   border-top: var(--border-par);
 }
 
-.nav,
-.container_bosco {
+.navigation,
+.container_name,
+.footer_name {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,18 +38,14 @@ footer {
   position: relative;
   margin-left: 35px;
   text-decoration: none;
-  font-family: Sahitya;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 28px;
 }
 
-.container_bosco {
+.container_name {
   flex-direction: column;
 }
 
-.bosco_rest {
+.footer_caption,
+.nav_items {
   font-family: Sahitya;
   font-weight: bold;
   letter-spacing: 1px;
@@ -59,14 +53,29 @@ footer {
   line-height: 28px;
 }
 
-.nav {
-  margin-bottom: 30px;
+.nav_items:hover {
+  text-decoration: underline;
+  color: var(--hover-nav-color);
 }
 
-.nav_icons > svg {
+.footer_caption > a {
+  text-decoration: none;
+  color: var(--color-font);
+}
+
+.footer_caption > a:hover {
+  color: var(--hover-nav-color);
+  text-decoration: underline;
+}
+
+.footer_icons > a {
   margin-left: 25px;
 }
 
-.nav a:nth-child(1) {
+.icons_hover > path:hover {
+  fill: var(--hover-nav-color);
+}
+
+.navigation a:nth-child(1) {
   margin-left: 0;
 }

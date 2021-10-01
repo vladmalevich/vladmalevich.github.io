@@ -1,4 +1,5 @@
-header {
+/*HEADER*/
+.header_main {
   position: relative;
   background-image: url(../images/main-page.png);
   background-repeat: no-repeat;
@@ -7,11 +8,9 @@ header {
   height: 899px;
 }
 
-header::before {
+.header_main::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   background-color: var(--color-background);
@@ -20,7 +19,9 @@ header::before {
 
 .nav,
 .container_welcome,
-.container_bosco {
+.container_name,
+.heading_name,
+.name {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,23 +29,10 @@ header::before {
 }
 
 .container_welcome {
-  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.nav_items {
-  color: var(--color-font);
-  position: relative;
-  margin-left: 35px;
-  text-decoration: none;
-  font-family: Sahitya;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 28px;
 }
 
 .container_nav {
@@ -53,40 +41,42 @@ header::before {
   margin: 30px 120px 0 120px;
 }
 
-.container_bosco {
+.container_name,
+.container_welcome {
   flex-direction: column;
 }
 
-.name_1,
-.name_2 {
-  font-family: Rye;
+.heading_name,
+.name,
+.welcome,
+.ready {
   color: var(--color-font);
 }
 
-.name_1 {
+.heading_name,
+.name {
+  font-family: Rye;
+}
+
+.welcome,
+.ready {
+  font-family: Sahitya;
+}
+
+.heading_name {
   font-size: 80px;
   line-height: 90px;
   border-bottom: var(--border-par);
   width: 200px;
-  display: flex;
-  justify-content: center;
 }
 
-.name_2 {
+.name {
   position: relative;
   font-size: 30px;
   line-height: 37px;
   border-bottom: var(--border-par);
   width: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-
-.welcome,
-.ready {
-  font-family: Sahitya;
-  color: var(--color-font);
+  text-decoration: none;
 }
 
 .welcome {
@@ -99,3 +89,209 @@ header::before {
   line-height: 75px;
   letter-spacing: 0.1em;
 }
+/*HEADER*/
+
+/*OUR STORY*/
+.container_story,
+.wrapper_story {
+  display: flex;
+}
+
+.wrapper_story {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 409px;
+  flex: 3 1 100px;
+  background: url(/icons/mango.png) repeat-y 5% 5%,
+    url(/icons/half.png) repeat-y 30% 5%, 
+    url(/icons/cheese.png) repeat-y 55% 5%,
+    url(/icons/cheese_2.png) repeat-y 80% 5%,
+    url(/icons/mango.png) repeat-y 105% 5%;
+}
+
+.fish_img {
+  flex: 2 1 100px;
+  padding: 0 111px 17px 0;
+}
+
+.disc,
+.name_article,
+.desc,
+.view {
+  text-align: center;
+}
+
+.name_article,
+.desc {
+  margin-bottom: 35px;
+}
+
+.disc {
+  font-family: Rye;
+}
+
+.name_article,
+.desc,
+.view {
+  font-family: Sahitya;
+}
+
+.name_article,
+.disc {
+  font-size: 48px;
+  line-height: 75px;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.view {
+  color: var(--color-background);
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.view:hover {
+  color: var(--hover-view-color);
+}
+
+.link_underline {
+  width: 180px;
+  border-bottom: var(--border-bottom-set);
+}
+
+.fish {
+  border-radius: 5px;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+
+.fish:hover {
+  transform: scale(1.05);
+}
+/*OUR STORY*/
+
+/*RECIPES COOK*/
+.container_recipes_cook {
+  position: relative;
+  background: url(../images/recipes.png);
+  height: 516px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container_recipes_cook::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0.5;
+}
+
+.wrapper_heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-font);
+}
+
+.wrapper_heading > h1 {
+  font-family: Rye;
+  font-size: 96px;
+  line-height: 120px;
+}
+
+.wrapper_heading > p {
+  font-family: Sahitya;
+  font-size: 64px;
+  line-height: 99px;
+}
+
+.container_cook {
+  background: url(../images/cook.png);
+  background-size: cover;
+  height: 490px;
+}
+/*RECIPES COOK*/
+
+/*MENU*/
+.container_menu,
+.wrapper_menu {
+  display: flex;
+}
+
+.wrapper_menu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex: 3 1;
+  background: url(/icons/half.png) repeat-y 5% 5%,
+    url(/icons/tree.png) repeat-y 30% 5%,
+    url(/icons/mushroom.png) repeat-y 55% 5%,
+    url(/icons/half.png) repeat-y 80% 5%, 
+    url(/icons/tree.png) repeat-y 105% 5%;
+}
+
+.menu_imgs {
+  padding: 35px 0 35px 120px;
+  display: grid;
+  grid-template: 194px 194px / 194px 194px;
+  grid-template-areas:
+    "one two"
+    "three four";
+  grid-gap: 30px;
+}
+
+.food_items {
+  transition: 0.5s;
+}
+
+.food_items:hover {
+  transform: scale(1.2);
+}
+/*MENU*/
+
+/*RESERVATION*/
+.container_reservation,
+.reservation {
+  display: flex;
+}
+
+.reservation {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  flex: 2 1;
+  background: url(/icons/mashrooms.png) repeat-y 5% 5%,
+    url(/icons/cheese_2.png) repeat-y 30% 5%,
+    url(/icons/mashrooms.png) repeat-y 55% 5%,
+    url(/icons/snail.png) repeat-y 80% 5%,
+    url(/icons/mashrooms.png) repeat-y 105% 5%;
+}
+
+.reservation_img {
+  flex: 450px;
+  padding: 47px 0;
+}
+
+.reservation_img img:nth-child(1) {
+  margin-right: 30px;
+}
+
+.res_img {
+  transition: 0.5s;
+}
+
+.res_img:hover {
+  transform: scale(1.15);
+}
+/*RESERVATION*/

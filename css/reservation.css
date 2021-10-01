@@ -1,21 +1,157 @@
-.container_reservation,
-.reservation {
+/*header*/
+.header {
+  background-image: url(/images/reservation.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 892px;
+}
+
+.container_gallery,
+.header {
+  margin-bottom: 50px;
+}
+
+.welcome_heading {
+  font-family: Rye;
+  color: var(--color-font);
+  font-size: 70px;
+  line-height: 90px;
+}
+
+.nav a:nth-child(2) {
+  text-decoration: underline;
+}
+
+.line_reservation {
   display: flex;
+  width: 180px;
+  margin: 0 auto;
+  border-bottom: var(--border-par);
+}
+/*header*/
+
+/*main*/
+.wrapper_gallery {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
 }
 
-.reservation {
-  flex-direction: column;
+.wrapper_gallery > img {
+  width: 250px;
+  height: 390px;
+  transition: 0.5s;
+}
+
+.wrapper_gallery > img:hover {
+  transform: scale(1.2);
+}
+
+.gallery_text {
+  text-align: center;
+  font-family: Sahitya;
+  font-size: 36px;
+  line-height: 56px;
+}
+
+.gallery_heading {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Rye;
+  font-size: 48px;
+  line-height: 50px;
+  border-bottom: var(--border-bottom-set);
+  width: 100px;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 600px;
-  flex: 2 1 100px;
+}
+/*main*/
+
+/*form*/
+.container_form {
+  background-image: url(/images/reservation_form.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  color: var(--color-font);
 }
 
-.reservation_img {
-  flex: 1 1 450px;
-  padding: 47px 0 47px 0;
+.container_form,
+.button {
+  display: flex;
+  justify-content: center;
 }
 
-.reservation_img img:nth-child(1) {
-  margin-right: 30px;
+.wrapper_form {
+  padding-top: 30px;
 }
+
+.form_heading {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Rye;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.line_indent,
+.phone_number {
+  margin-bottom: 50px;
+}
+
+.form_font {
+  font-family: Sahitya;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.date_person,
+.date,
+.number_person,
+.wishes,
+.name_surname {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.date,
+.number_person,
+.wishes,
+.name_surname,
+.phone_number {
+  flex-direction: column;
+}
+
+#date,
+#number,
+#wish,
+#name,
+#phone {
+  margin: 5px 0;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.date {
+  margin-right: 150px;
+}
+
+.button > input {
+  font-family: Rye;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--button-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: var(--button-color) 1px solid;
+  border-radius: 5px;
+  padding: 10px 80px;
+}
+
+.button > input:hover,
+#date:hover {
+  cursor: pointer;
+}
+/*form*/
