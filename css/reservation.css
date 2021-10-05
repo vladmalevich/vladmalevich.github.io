@@ -1,4 +1,4 @@
-/*header*/
+/*HEADER*/
 .header {
   background-image: url(/images/reservation.png);
   background-repeat: no-repeat;
@@ -29,9 +29,9 @@
   margin: 0 auto;
   border-bottom: var(--border-par);
 }
-/*header*/
+/*HEADER*/
 
-/*main*/
+/*MAIN*/
 .wrapper_gallery {
   display: flex;
   justify-content: space-around;
@@ -61,14 +61,14 @@
   font-family: Rye;
   font-size: 48px;
   line-height: 50px;
-  border-bottom: var(--border-bottom-set);
+  border-bottom: var(--border-set);
   width: 100px;
   display: flex;
   justify-content: center;
 }
-/*main*/
+/*MAIN*/
 
-/*form*/
+/*FORM*/
 .container_form {
   background-image: url(/images/reservation_form.png);
   background-repeat: no-repeat;
@@ -154,4 +154,4 @@
 #date:hover {
   cursor: pointer;
 }
-/*form*/
+/*FORM*/

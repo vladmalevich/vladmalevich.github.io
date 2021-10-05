@@ -161,7 +161,7 @@
 
 .link_underline {
   width: 180px;
-  border-bottom: var(--border-bottom-set);
+  border-bottom: var(--border-set);
 }
 
 .fish {

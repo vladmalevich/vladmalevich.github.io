@@ -1,4 +1,4 @@
-/*header*/
+/*HEADER*/
 .header {
   position: relative;
   background-image: url(/images/back_features.png);
@@ -71,9 +71,9 @@
   justify-content: center;
   text-decoration: none;
 }
-/*header*/
+/*HEADER*/
 
-/*content*/
+/*CONTENT*/
 .container_heading {
   flex-direction: column;
   position: relative;
@@ -137,4 +137,4 @@
 .wrapper_indent {
   margin-bottom: 50px;
 }
-/*content*/
+/*CONTENT*/

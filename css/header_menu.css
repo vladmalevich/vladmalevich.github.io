@@ -38,7 +38,7 @@
   font-family: Rye;
   font-size: 30px;
   line-height: 37px;
-  border-bottom: var(--border-bottom-set);
+  border-bottom: var(--border-set);
   width: 80px;
 }
 
