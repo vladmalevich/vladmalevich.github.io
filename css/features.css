@@ -132,6 +132,7 @@
 
 .img_transform:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .wrapper_indent {

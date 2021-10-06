@@ -1,3 +1,12 @@
+img {
+  transition: 0.5s;
+}
+
+img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 /*COVER*/
 .container_cover,
 .wrapper_cover,
@@ -11,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   height: 730px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .text_cover {
@@ -27,6 +36,10 @@
   line-height: 60px;
   border-bottom: var(--border-set);
   width: 100px;
+}
+
+.us:hover {
+  transform: scale(1.1);
 }
 /*COVER*/
 

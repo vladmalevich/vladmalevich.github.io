@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/burger.css">
 </head>
 
 <body>
@@ -19,29 +20,28 @@
             <div class="container_name">
                 <a href="index.html" class="name">BOSCO</a>
             </div>
-            <div class="nav">
-                <a href="menu.html" class="nav_items">Menu</a>
-                <a href="reservation.html" class="nav_items">Reservation</a>
-                <a href="features.html" class="nav_items">Features</a>
-                <a href="contacts.html" class="nav_items">Contacts</a>
+            <div class="wrapper_nav">
+                <input id="nav_toggle" type="checkbox" />
+                <label class="nav_button" for="nav_toggle">
+                <span></span>
+                </label>
+                <ul class="nav">
+                    <li><a href="menu.html" class="nav_items">Menu</a></li>
+                    <li><a href="reservation.html" class="nav_items">Reservation</a></li>
+                    <li><a href="features.html" class="nav_items">Features</a></li>
+                    <li><a href="contacts.html" class="nav_items">Contacts</a></li>
+                </ul>
             </div>
         </div>
         <div class="container_contacts">
             <h1 class="heading_contacts">Contact us for all questions of interest:</h1>
             <div class="wrapper_contacts">
                 <ul class="contacts_tel">
-                    <li>+(375) 11 123 45 67</li>
-                    <li>+(375) 11 123 45 78</li>
-                    <li>+(375) 11 123 45 89</li>
-                    <li>+(375) 11 123 45 90</li>
-                    <li>+(375) 22 123 45 67</li>
-                </ul>
-                <ul class="contacts_name">
-                    <li>Anastasia (director)</li>
-                    <li>Eva (art-director)</li>
-                    <li>Jake (recruiting specialist)</li>
-                    <li>Michael (specialist in working with customers)</li>
-                    <li>Our call-center</li>
+                    <li><span class="number">+(375) 11 123 45 67</span><span class="contact">Anastasia (director)</span></li>
+                    <li><span class="number">+(375) 11 123 45 78</span><span class="contact">Eva (art-director</span)</li>
+                    <li><span class="number">+(375) 11 123 45 89</span><span class="contact">Jake (recruiting specialist</span</li>
+                    <li><span class="number">+(375) 11 123 45 90</span><span class="contact">Michael (specialist in working with customers)</span</li>
+                    <li><span class="number">+(375) 22 123 45 67</span><span class="contact">Our call-center</span</li>
                 </ul>
             </div>
         </div>
@@ -59,6 +59,7 @@
             <a href="features.html" class="nav_items">Features</a>
             <a href="contacts.html" class="nav_items">Contacts</a>
         </div>
+        <span class="footer_border"></span>
         <div class="container_icons">
             <div class="footer_caption">
                 <a href="index.html">Bosco restaurant 2021</a>

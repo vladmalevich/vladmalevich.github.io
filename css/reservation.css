@@ -1,6 +1,6 @@
 /*HEADER*/
 .header {
-  background-image: url(/images/reservation.png);
+  background-image: url(/images/image_7-min-progressive.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -46,6 +46,7 @@
 
 .wrapper_gallery > img:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .gallery_text {

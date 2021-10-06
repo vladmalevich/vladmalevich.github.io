@@ -1,7 +1,7 @@
 /*HEADER*/
 .header_main {
   position: relative;
-  background-image: url(../images/main-page.png);
+  background-image: url(/images/main_page.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -172,6 +172,7 @@
 
 .fish:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 /*OUR STORY*/
 
@@ -256,6 +257,7 @@
 
 .food_items:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 /*MENU*/
 
@@ -293,5 +295,6 @@
 
 .res_img:hover {
   transform: scale(1.15);
+  cursor: pointer;
 }
 /*RESERVATION*/

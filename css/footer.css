@@ -79,3 +79,83 @@
 .navigation a:nth-child(1) {
   margin-left: 0;
 }
+
+/*MOBILE PHONES*/
+@media screen and (max-width: 768px) {
+
+  .container_icons {
+    border: none;
+    margin: 0;
+    padding: 0 35px 50px 35px;
+  }
+
+  .footer_border {
+    border-top: 2px solid var(--color-font);
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .navigation {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 544px) {
+
+.footer {
+  height: 250px;
+}
+
+.footer_name {
+  font-size: 40px;
+  width: 90px;
+}
+
+.footer_caption {
+  font-size: 14px;
+}
+
+.icons_hover {
+  width: 20px;
+  height: 20px;
+}
+
+.container_icons {
+  padding: 10px 10px 30px 10px;
+  margin: 0;
+}
+
+.footer_icons > a {
+  margin-left: 15px;
+}
+
+.footer_border {
+  width: 300px;
+}
+}
+
+@media screen and (max-width: 369px) {
+
+  .footer {
+    height: 224px;
+  }
+
+  .footer_caption {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .icons_hover {
+    width: 14px;
+    height: 14px;
+  }
+
+  .footer_border {
+    width: 250px;
+  }
+
+  .footer_icons {
+  }
+
+}
+/*MOBILE PHONES*/
