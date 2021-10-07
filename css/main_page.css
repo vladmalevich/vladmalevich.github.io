@@ -81,7 +81,7 @@
 
 .welcome {
   font-size: 72px;
-  line-height: 112px;
+  line-height: 100px;
 }
 
 .ready {
@@ -103,11 +103,9 @@
   align-items: center;
   height: 409px;
   flex: 3 1 100px;
-  background: url(/icons/mango.png) repeat-y 5% 5%,
-    url(/icons/half.png) repeat-y 30% 5%, 
-    url(/icons/cheese.png) repeat-y 55% 5%,
-    url(/icons/cheese_2.png) repeat-y 80% 5%,
-    url(/icons/mango.png) repeat-y 105% 5%;
+  background: url(/icons/back_story.png) no-repeat 50% 0%,
+  url(/icons/back_story2.png) no-repeat -10% 50%,
+  url(/icons/back_story.png) no-repeat 50% 100%;
 }
 
 .fish_img {
@@ -234,11 +232,9 @@
   align-items: center;
   height: 500px;
   flex: 3 1;
-  background: url(/icons/half.png) repeat-y 5% 5%,
-    url(/icons/tree.png) repeat-y 30% 5%,
-    url(/icons/mushroom.png) repeat-y 55% 5%,
-    url(/icons/half.png) repeat-y 80% 5%, 
-    url(/icons/tree.png) repeat-y 105% 5%;
+  background: url(/icons/back_menu.png) no-repeat 50% 10%,
+  url(/icons/back_menu2.png) no-repeat 50% 50%,
+  url(/icons/back_menu.png) no-repeat 50% 90%;
 }
 
 .menu_imgs {
@@ -273,11 +269,10 @@
   align-items: center;
   height: 600px;
   flex: 2 1;
-  background: url(/icons/mashrooms.png) repeat-y 5% 5%,
-    url(/icons/cheese_2.png) repeat-y 30% 5%,
-    url(/icons/mashrooms.png) repeat-y 55% 5%,
-    url(/icons/snail.png) repeat-y 80% 5%,
-    url(/icons/mashrooms.png) repeat-y 105% 5%;
+  background: url(/icons/back_reservation.png) no-repeat 0% 3%,
+  url(/icons/back_reservation2.png) no-repeat -100% 35%,
+  url(/icons/back_reservation.png) no-repeat 0% 66%,
+  url(/icons/back_reservation2.png) no-repeat -100% 100%;
 }
 
 .reservation_img {
@@ -298,3 +293,77 @@
   cursor: pointer;
 }
 /*RESERVATION*/
+
+/*MOBILE PHONES*/
+@media screen and (max-width: 768px) {
+
+.name {
+  display: none;
+}
+
+.ready, .reservation {
+  margin-top: 30px;
+}
+  
+.welcome, .heading_name {
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.heading_name {
+  width: 120px;
+}
+
+.fish_img, .menu_imgs {
+  display: none;
+}
+
+.wrapper_story, .wrapper_menu, .reservation {
+  background: none;
+}
+
+.container_reservation {
+  flex-direction: column;
+}
+
+.reservation_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disc, .name_article {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.name_article {
+  margin-bottom: 15px;
+}
+
+.view {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.link_underline {
+  width: 130px;
+}
+
+.desc {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 0 10px 20px 10px;
+}
+
+.wrapper_menu {
+  height: 410px;
+}
+
+.wrapper_heading > h1, .wrapper_heading > p {
+  font-size: 40px;
+  line-height: 60px;
+}
+}
+/*MOBILE PHONES*/

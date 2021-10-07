@@ -108,32 +108,34 @@
 /*MOBILE PHONES*/
 @media screen and (max-width: 768px) {
 
-.wrapper_contacts {
-  margin-left: 0;
-}
+  .name {
+    margin-top: 20px;
+  }
 
-.container_contacts {
-  margin-top: 20px;
-}
+  .wrapper_contacts {
+    margin-left: 0;
+  }
 
-.heading_contacts {
-  width: 400px;
-}
+  .container_contacts {
+    margin-top: 20px;
+  }
 
-.contacts_tel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .heading_contacts {
+    width: 400px;
+  }
 
-.contact {
-  width: 250px;
-}
-  
+  .contacts_tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 544px) {
-
   .wrapper_contacts {
     font-size: 14px;
     line-height: 20px;
@@ -145,7 +147,6 @@
 }
 
 @media screen and (max-width: 369px) {
-
   .heading_contacts {
     width: 100%;
   }
@@ -153,6 +154,5 @@
   .contact {
     width: 140px;
   }
-
 }
 /*MOBILE PHONES*/
