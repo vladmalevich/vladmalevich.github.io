@@ -6,43 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOSCO Menu</title>
-    <link rel="shortcut icon" type="image/png" href="icons/bosco.png"/>
+    <link rel="shortcut icon" type="image/png" href="icons/bosco.png" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/header_menu.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/burger.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="container_logo">
-            <a href="index.html" class="logo">BOSCO</a>
+        <div class="wrapper_header">
+            <div class="container_logo">
+                <a href="index.html" class="logo">BOSCO</a>
+            </div>
+            <div class="wrapper_nav">
+                <input id="nav_toggle" type="checkbox" />
+                <label class="nav_button" for="nav_toggle">
+                    <span></span>
+                </label>
+                <ul class="navigation_menu nav">
+                    <li><a href="menu.html" class="nav_item">Menu</a></li>
+                    <li><a href="reservation.html" class="nav_item">Reservation</a></li>
+                    <li><a href="features.html" class="nav_item">Features</a></li>
+                    <li><a href="contacts.html" class="nav_item">Contacts</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="navigation_menu">
-            <a href="menu.html" class="nav_item">Menu</a>
-            <a href="reservation.html" class="nav_item">Reservation</a>
-            <a href="features.html" class="nav_item">Features</a>
-            <a href="contacts.html" class="nav_item">Contacts</a>
+        <div class="container_cover">
+            <div class="wrapper_cover">
+                <h1 class="heading_menu logo">Menu</h1>
+                <p class="text_cover">The menu concept is based on the selection of products that meet our
+                    understanding of quality standards. When creating a dish, we
+                    combine modern and classical methods, taking into account the
+                    peculiarities and properties of products, in order to maximize their
+                    potential, emphasize the versatility of textures and purity of taste.
+                    Special attention is paid to the aesthetics of the dish.</p>
+            </div>
+            <div class="dish_img">
+                <img src="images/dish.png" alt="dish" class="dish" />
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="container_cover">
-            <div class="wrapper_cover">
-                <h1 class="heading_menu">Menu</h1>
-                <p class="text_cover">The menu concept is based on the selection of products that meet our<br>
-                    understanding of quality standards. When creating a dish, we<br>
-                    combine modern and classical methods, taking into account the<br>
-                    peculiarities and properties of products, in order to maximize their<br>
-                    potential, emphasize the versatility of textures and purity of taste.<br>
-                    Special attention is paid to the aesthetics of the dish.</p>
-            </div>
-            <div class="dish_img">
-                <img src="images/dish.png" alt="dish" class="us"/>
-            </div>
-        </section>
-
         <section class="container_pizza">
             <div class="pizza_img">
                 <img src="images/pizza.png" alt="pizza" class="pizza_pic" />
@@ -52,23 +59,23 @@
                 <ul class="price_list">
                     <li>
                         <h3 class="name_price">La Cipolla<span>20$</span></h3>
-                        <p class="composition">Thin crust pizza with tomato sauce, Pepperoni sausage, bacon,<br>
+                        <p class="composition">Thin crust pizza with tomato sauce, Pepperoni sausage, bacon,
                             Mozzarella, bell peppers, olives, onions, mushrooms and ham.</p>
                     </li>
                     <li>
                         <h3 class="name_price">Salami<span>19$</span></h3>
-                        <p class="composition">Thin crust pizza with tomato sauce, Milano salami and<br>Mozzarella
+                        <p class="composition">Thin crust pizza with tomato sauce, Milano salami and Mozzarella
                             cheese.
                         </p>
                     </li>
                     <li>
                         <h3 class="name_price">Pepperoni<span>22$</span></h3>
-                        <p class="composition">Thin crust pizza with tomato sauce, Peperoni sausage and<br>Mozzarella.
+                        <p class="composition">Thin crust pizza with tomato sauce, Peperoni sausage and Mozzarella.
                         </p>
                     </li>
                     <li>
                         <h3 class="name_price">Calzone<span>20$</span></h3>
-                        <p class="composition">Pizza wrapped in an envelope with chicken breast, broccoli,<br>sour
+                        <p class="composition">Pizza wrapped in an envelope with chicken breast, broccoli, sour
                             cream,
                             red onion and Peperoni
                             sausage.</p>
@@ -91,33 +98,33 @@
                     </li>
                     <li>
                         <h3 class="name_price">Grilled Adyghe cheese salad<span>20$</span></h3>
-                        <p class="composition">With pickled bell peppers, grilled zucchini and<br>
+                        <p class="composition">With pickled bell peppers, grilled zucchini and
                             tomatoes with lemon-olive dressing.</p>
                     </li>
                     <li>
                         <h3 class="name_price">Caesar<span>18$</span></h3>
-                        <p class="composition">With chicken fillet, romano and iceberg lettuce, Caesar sauce,<br>
+                        <p class="composition">With chicken fillet, romano and iceberg lettuce, Caesar sauce,
                             parmesan cheese, garlic croutons, cherry tomatoes and herbs.</p>
                     </li>
                     <li>
                         <h3 class="name_price">Greek salad<span>18$</span></h3>
-                        <p class="composition">Fresh cucumbers, cherry tomatoes, bell peppers, lettuce, olives,<br>
+                        <p class="composition">Fresh cucumbers, cherry tomatoes, bell peppers, lettuce, olives,
                             feta cheese, boiled egg, herbs dressed with olive oil.</p>
                     </li>
                     <li>
                         <h3 class="name_price">Pork salad<span>15$</span></h3>
-                        <p class="composition">With iceberg lettuce, fresh vegetables, pickled bell pepper, egg,<br>
+                        <p class="composition">With iceberg lettuce, fresh vegetables, pickled bell pepper, egg,
                             croutons with creamy horseradish sauce.</p>
                     </li>
                     <li>
                         <h3 class="name_price">Roasted beef salad<span>19$</span></h3>
-                        <p class="composition">With bell pepper, lightly salted cucumbers under Asian<br>
+                        <p class="composition">With bell pepper, lightly salted cucumbers under Asian
                             dressing with tabasco, garlic and coriander.</p>
                     </li>
                 </ul>
             </div>
             <div class="salad_img">
-                <img src="images/salad.png" alt="salad" />
+                <img src="images/salad.png" alt="salad" class="salad" />
             </div>
         </section>
 
@@ -130,31 +137,26 @@
                 <span class="line_dish"></span>
                 <ul class="price_list">
                     <li>
-                        <h3 class="name_price">La Cipolla<span>20$</span></h3>
-                        <p class="composition">Thin crust pizza with tomato sauce, Pepperoni sausage, bacon,<br>
-                            Mozzarella, bell peppers, olives, onions, mushrooms and ham.</p>
+                        <h3 class="name_price">Pork shank with crispy crust<span>30$</span></h3>
+                        <p class="composition">Cooked according to a proprietary recipe, served with sauerkraut garnish,
+                            mashed potatoes and mustard.</p>
                     </li>
                     <li>
-                        <h3 class="name_price">Salami<span>19$</span></h3>
-                        <p class="composition">Thin crust pizza with tomato sauce, Milano salami and<br>Mozzarella
-                            cheese.
-                        </p>
+                        <h3 class="name_price">Wiener pork schnitzel on the bone<span>25$</span></h3>
+                        <p class="composition">With French fries and fresh salad.</p>
                     </li>
                     <li>
-                        <h3 class="name_price">Pepperoni<span>22$</span></h3>
-                        <p class="composition">Thin crust pizza with tomato sauce, Peperoni sausage and<br>Mozzarella.
-                        </p>
+                        <h3 class="name_price">Pork shank with crispy crust <span>27$</span></h3>
+                        <p class="composition">Cooked according to a proprietary recipe, served with sauerkraut garnish,
+                            mashed potatoes and mustard.</p>
                     </li>
                     <li>
-                        <h3 class="name_price">Calzone<span>20$</span></h3>
-                        <p class="composition">Pizza wrapped in an envelope with chicken breast, broccoli,<br>sour
-                            cream,
-                            red onion and Peperoni
-                            sausage.</p>
+                        <h3 class="name_price">BBQ baked pork ribs <span>27$</span></h3>
+                        <p class="composition">With potato wedges, corn and pickled cucumbers.</p>
                     </li>
                     <li>
-                        <h3 class="name_price">Buffalo<span>23$</span></h3>
-                        <p class="composition">Pizza with fresh tomato sauce and tender Mozzarella Buffalo.</p>
+                        <h3 class="name_price">BBQ baked pork ribs for 2 persons<span>50$</span></h3>
+                        <p class="composition">With potato wedges, corn and pickled cucumbers.</p>
                     </li>
                 </ul>
             </div>
@@ -162,8 +164,7 @@
 
         <section class="container_imgs">
             <div class="wrapper_imgs">
-                <div><img src="images/BBQ baked pork ribs.png" alt="pork_ribs" class="pork_ribs"></div>
-                <div><img src="images/plate4.png" alt="plate" class="plate"></div>
+                <img src="images/BBQ baked pork ribs.png" alt="pork_ribs" class="pork_ribs" />
             </div>
         </section>
 
@@ -172,30 +173,30 @@
                 <h1 class="heading_menu sauce">Sauces</h1>
                 <ul class="price_list">
                     <li>
-                        <h3 class="name_price">Hot mustard<span>3$</span></h3>
+                        <h3 class="name_price">Hot mustard<span class="img_sauce_margin">3$</span></h3>
                     </li>
                     <li>
-                        <h3 class="name_price">Spicy garlic sauce<span>3$</span></h3>
+                        <h3 class="name_price">Spicy garlic sauce<span class="img_sauce_margin">3$</span></h3>
                     </li>
                     <li>
-                        <h3 class="name_price">Chili sauce sweet<span>3$</span></h3>
+                        <h3 class="name_price">Chili sauce sweet<span class="img_sauce_margin">3$</span></h3>
                     </li>
                     <li>
-                        <h3 class="name_price">German mustard<span>3$</span></h3>
+                        <h3 class="name_price">German mustard<span class="img_sauce_margin">3$</span></h3>
                     </li>
                     <li>
-                        <h3 class="name_price">Barbecue sauce<span>3$</span></h3>
+                        <h3 class="name_price">Barbecue sauce<span class="img_sauce_margin">3$</span></h3>
                     </li>
                     <li>
-                        <h3 class="name_price">Creamy horseradish<span>3$</span></h3>
+                        <h3 class="name_price">Creamy horseradish<span class="img_sauce_margin">3$</span></h3>
                     </li>
                     <li>
-                        <h3 class="name_price">Wasabi sauce<span>3$</span></h3>
+                        <h3 class="name_price">Wasabi sauce<span class="img_sauce_margin">3$</span></h3>
                     </li>
                 </ul>
             </div>
-            <div>
-                <img src="images/sauces.png" alt="sauces" />
+            <div class="container_sauces_img">
+                <img src="images/sauces.png" alt="sauces" class="sauces_img" />
             </div>
         </section>
 
@@ -261,7 +262,7 @@
                     </ul>
                 </div>
             </div>
-            <h2 class="coffee_tea">Coctails</h2>
+            <h2 class="coffee_tea heading_coctails">Coctails</h2>
             <div class="container_coctails">
                 <div class="wrapper_coctails">
                     <ul class="price_list">
@@ -316,9 +317,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="coctail_img"><img src="/images/coctail.png" alt="coctail" class="coctail" /></div>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="container_name">
             <h2 class="footer_name">BOSCO</h2>
@@ -330,6 +332,7 @@
             <a href="features.html" class="nav_items">Features</a>
             <a href="contacts.html" class="nav_items">Contacts</a>
         </div>
+        <span class="footer_border"></span>
         <div class="container_icons">
             <div class="footer_caption">
                 <a href="index.html">Bosco restaurant 2021</a>

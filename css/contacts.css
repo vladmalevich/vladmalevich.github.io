@@ -1,5 +1,5 @@
 .header {
-  background-image: url(/images/contacts.png);
+  background-image: url(/images/contacts.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,7 +62,7 @@
   line-height: 37px;
 }
 
-.nav a:nth-child(4) {
+.nav li:nth-child(4) {
   text-decoration: underline;
 }
 

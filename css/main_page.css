@@ -1,20 +1,20 @@
 /*HEADER*/
 .header_main {
   position: relative;
-  background-image: url(/images/main_page.png);
+  background-image: url(/images/main_page.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 899px;
 }
 
-.header_main::before {
+.universal_background::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: var(--color-background);
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .nav,
@@ -29,8 +29,8 @@
 }
 
 .container_welcome {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -38,12 +38,13 @@
 .container_nav {
   display: flex;
   justify-content: space-between;
-  margin: 30px 120px 0 120px;
+  margin: 15px 120px 0 120px;
 }
 
 .container_name,
 .container_welcome {
   flex-direction: column;
+  padding-top: 15px;
 }
 
 .heading_name,
@@ -86,8 +87,8 @@
 
 .ready {
   font-size: 48px;
-  line-height: 75px;
-  letter-spacing: 0.1em;
+  line-height: 65px;
+  letter-spacing: 8px;
 }
 /*HEADER*/
 
@@ -103,14 +104,13 @@
   align-items: center;
   height: 409px;
   flex: 3 1 100px;
-  background: url(/icons/back_story.png) no-repeat 50% 0%,
-  url(/icons/back_story2.png) no-repeat -10% 50%,
-  url(/icons/back_story.png) no-repeat 50% 100%;
+  background: url(/icons/back_story.png) no-repeat 80% 0%,
+    url(/icons/back_story2.png) no-repeat 10% 50%,
+    url(/icons/back_story.png) no-repeat 80% 100%;
 }
 
 .fish_img {
-  flex: 2 1 100px;
-  padding: 0 111px 17px 0;
+  padding: 15px 111px 17px 0;
 }
 
 .disc,
@@ -144,6 +144,7 @@
 .desc {
   font-size: 18px;
   line-height: 28px;
+  max-width: 670px;
 }
 
 .view {
@@ -164,8 +165,6 @@
 
 .fish {
   border-radius: 5px;
-  padding-top: 15px;
-  transition: 0.5s;
 }
 
 .fish:hover {
@@ -177,7 +176,8 @@
 /*RECIPES COOK*/
 .container_recipes_cook {
   position: relative;
-  background: url(../images/recipes.png);
+  background: url(../images/recipes.jpg);
+  background-size: cover;
   height: 516px;
   display: flex;
   justify-content: center;
@@ -186,11 +186,6 @@
 }
 
 .container_recipes_cook::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: var(--color-background);
   opacity: 0.5;
 }
 
@@ -201,20 +196,20 @@
   color: var(--color-font);
 }
 
-.wrapper_heading > h1 {
+.title_name {
   font-family: Rye;
   font-size: 96px;
   line-height: 120px;
 }
 
-.wrapper_heading > p {
+.mini_title_name {
   font-family: Sahitya;
   font-size: 64px;
   line-height: 99px;
 }
 
 .container_cook {
-  background: url(../images/cook.png);
+  background: url(../images/cook.jpg);
   background-size: cover;
   height: 490px;
 }
@@ -233,8 +228,8 @@
   height: 500px;
   flex: 3 1;
   background: url(/icons/back_menu.png) no-repeat 50% 10%,
-  url(/icons/back_menu2.png) no-repeat 50% 50%,
-  url(/icons/back_menu.png) no-repeat 50% 90%;
+    url(/icons/back_menu2.png) no-repeat 50% 50%,
+    url(/icons/back_menu.png) no-repeat 50% 90%;
 }
 
 .menu_imgs {
@@ -247,7 +242,9 @@
   grid-gap: 30px;
 }
 
-.food_items {
+.food_items,
+.fish,
+.res_img {
   transition: 0.5s;
 }
 
@@ -270,9 +267,9 @@
   height: 600px;
   flex: 2 1;
   background: url(/icons/back_reservation.png) no-repeat 0% 3%,
-  url(/icons/back_reservation2.png) no-repeat -100% 35%,
-  url(/icons/back_reservation.png) no-repeat 0% 66%,
-  url(/icons/back_reservation2.png) no-repeat -100% 100%;
+    url(/icons/back_reservation2.png) no-repeat -100% 35%,
+    url(/icons/back_reservation.png) no-repeat 0% 66%,
+    url(/icons/back_reservation2.png) no-repeat -100% 100%;
 }
 
 .reservation_img {
@@ -284,10 +281,6 @@
   margin-right: 30px;
 }
 
-.res_img {
-  transition: 0.5s;
-}
-
 .res_img:hover {
   transform: scale(1.15);
   cursor: pointer;
@@ -295,75 +288,117 @@
 /*RESERVATION*/
 
 /*MOBILE PHONES*/
-@media screen and (max-width: 768px) {
-
-.name {
-  display: none;
-}
-
-.ready, .reservation {
-  margin-top: 30px;
-}
+@media screen and (max-width: 1000px) {
   
-.welcome, .heading_name {
-  font-size: 50px;
-  line-height: 70px;
+  .name {
+    display: none;
+  }
+
+  .ready,
+  .reservation {
+    margin-top: 30px;
+  }
+
+  .welcome,
+  .heading_name {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .heading_name {
+    width: 120px;
+  }
+
+  .fish_img,
+  .menu_imgs {
+    display: none;
+  }
+
+  .wrapper_story,
+  .wrapper_menu,
+  .reservation {
+    background: none;
+  }
+
+  .wrapper_story {
+    height: 450px;
+  }
+
+  .container_reservation {
+    flex-direction: column;
+  }
+
+  .reservation_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .disc,
+  .name_article {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .name_article {
+    margin-bottom: 15px;
+  }
+
+  .view {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+
+  .link_underline {
+    width: 130px;
+  }
+
+  .desc {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0 10px 20px 10px;
+  }
+
+  .wrapper_menu {
+    height: 410px;
+    margin-bottom: 10px;
+  }
+
+  .title_name,
+  .mini_title_name {
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
 
-.heading_name {
-  width: 120px;
-}
+@media screen and (max-width: 600px) {
+  .ready {
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.fish_img, .menu_imgs {
-  display: none;
-}
+  .wrapper_story,
+  .wrapper_menu,
+  .reservation {
+    height: 450px;
+  }
 
-.wrapper_story, .wrapper_menu, .reservation {
-  background: none;
-}
+  .desc {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-.container_reservation {
-  flex-direction: column;
-}
+  .reservation_img {
+    flex-direction: column;
+  }
 
-.reservation_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .reservation_img img:nth-child(1) {
+    margin: 0 0 10px 0;
+  }
 
-.disc, .name_article {
-  font-size: 40px;
-  line-height: 55px;
-}
-
-.name_article {
-  margin-bottom: 15px;
-}
-
-.view {
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: bold;
-}
-
-.link_underline {
-  width: 130px;
-}
-
-.desc {
-  font-size: 30px;
-  line-height: 45px;
-  margin: 0 10px 20px 10px;
-}
-
-.wrapper_menu {
-  height: 410px;
-}
-
-.wrapper_heading > h1, .wrapper_heading > p {
-  font-size: 40px;
-  line-height: 60px;
-}
+  .container_welcome {
+    top: 30%;
+  }
 }
 /*MOBILE PHONES*/

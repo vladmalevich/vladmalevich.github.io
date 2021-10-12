@@ -1,13 +1,13 @@
 /*HEADER*/
 .header {
-  background-image: url(/images/back_features.png);
+  background-image: url(/images/back_features.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 2000px;
 }
 
-.nav a:nth-child(3) {
+.nav li:nth-child(3) {
   text-decoration: underline;
 }
 
@@ -73,6 +73,7 @@
   font-size: 50px;
   line-height: 60px;
   margin-bottom: 65px;
+  max-width: 800px;
 }
 
 .heading_bottom {
@@ -88,6 +89,7 @@
   font-size: 26px;
   line-height: 37px;
   margin-bottom: 300px;
+  max-width: 900px;
 }
 
 .container_title {
@@ -266,5 +268,9 @@
     font-size: 16px;
     line-height: 27px;
   }
+  
+.img_indent {
+  margin: 0 2px;
+}
 }
 /*MOBILE PHONES*/

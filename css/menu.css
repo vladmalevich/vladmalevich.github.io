@@ -7,7 +7,77 @@ img:hover {
   cursor: pointer;
 }
 
+/*HEADER*/
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 830px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.navigation_menu,
+.container_logo,
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation_menu {
+  padding-top: 15px;
+}
+
+.nav_item,
+.logo {
+  color: var(--color-background);
+  text-decoration: none;
+}
+
+.nav_item {
+  margin-left: 35px;
+  font-family: Sahitya;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.nav_item:hover {
+  text-decoration: underline;
+  color: var(--hover-nav-color);
+}
+
+.logo {
+  font-family: Rye;
+  font-size: 30px;
+  line-height: 40px;
+  border-bottom: var(--border-set);
+  width: 60px;
+}
+
+.container_logo {
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.navigation_menu li:nth-child(1) {
+  text-decoration: underline;
+}
+/*HEADER*/
+
 /*COVER*/
+main {
+  padding: 0 100px;
+}
+
 .container_cover,
 .wrapper_cover,
 .heading_menu,
@@ -19,7 +89,6 @@ img:hover {
 .wrapper_cover {
   flex-direction: column;
   align-items: center;
-  height: 730px;
   margin-right: 40px;
 }
 
@@ -27,7 +96,9 @@ img:hover {
   margin-top: 32px;
   font-family: Sahitya;
   font-size: 21px;
-  line-height: 28px;
+  line-height: 34px;
+  text-align: center;
+  max-width: 600px;
 }
 
 .heading_menu {
@@ -35,10 +106,16 @@ img:hover {
   font-size: 48px;
   line-height: 60px;
   border-bottom: var(--border-set);
-  width: 100px;
+  width: 60px;
+  margin: 0 auto;
 }
 
-.us:hover {
+.dish {
+  width: 520px;
+  height: 600px;
+}
+
+.dish:hover {
   transform: scale(1.1);
 }
 /*COVER*/
@@ -56,11 +133,10 @@ img:hover {
 
 .wrapper_pizza {
   flex-direction: column;
-  align-items: center;
 }
 
 .pizza_img {
-  padding: 111px 50px 0 0;
+  padding-right: 50px;
 }
 
 .pizza_pic {
@@ -68,7 +144,12 @@ img:hover {
   height: 861px;
 }
 
-.composition,
+.composition {
+  font-family: Sahitya;
+  font-size: 20px;
+  line-height: 35px;
+}
+
 .name_price {
   font-family: Sahitya;
   font-size: 24px;
@@ -78,17 +159,18 @@ img:hover {
 .name_price {
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
-  margin: 8px 0;
+  font-weight: 100;
+  margin: 10px 0;
 }
+
 /*PIZZA*/
 
 /*SALADS*/
-.container_salad, .wrapper_salad {
+.container_salad,
+.wrapper_salad {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
 }
 
 .container_salad {
@@ -105,7 +187,8 @@ img:hover {
 /*SALADS*/
 
 /*DISHES*/
-.container_dishes, .wrapper_dishes {
+.container_dishes,
+.wrapper_dishes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,12 +204,6 @@ img:hover {
 
 .dishes_img {
   padding: 300px 30px 0 0;
-}
-
-.composition, .name_price {
-  font-family: Sahitya;
-  font-size: 24px;
-  line-height: 37px;
 }
 
 .name_price {
@@ -145,18 +222,22 @@ img:hover {
 .line_dish {
   width: 90px;
   margin-bottom: 25px;
-  border-bottom: var( --border-set);
+  border-bottom: var(--border-set);
 }
 
 .main_dish {
   position: relative;
   z-index: 1;
 }
+
+.wrapper_dishes > h1 {
+  font-size: 46px;
+}
 /*DISHES*/
 
 /*IMAGES*/
 .container_imgs {
-  height: 750px;
+  height: 680px;
 }
 
 .wrapper_imgs {
@@ -165,38 +246,41 @@ img:hover {
   position: relative;
 }
 
-.pork_ribs, .plate {
-  position: absolute;
-}
-
 .pork_ribs {
-  top: -160px;
-  left: 160px;
+  position: absolute;
+  width: 1000px;
+  height: 750px;
+  top: -140px;
+  left: 115px;
 }
 
-.plate {
-  top: 220px;
-  left: 850px;
+.pork_ribs:hover {
+  z-index: 1;
+  transform: scale(1.1);
 }
 /*IMAGES*/
 
 /*SAUCES*/
-.container_sauces {
+
+.container_sauces, .wrapper_sauces {
   display: flex;
   flex-direction: column;
+}
+
+.container_sauces_img, .wrapper_sauces {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.wrapper_sauces {
-  width: 600px;
-  text-align: center;
-  margin-bottom: 70px;
+.img_sauce_margin {
+  margin-left: 350px;
 }
 
-.sauce, .drinks, .coffee_tea {
-  margin: 0 auto;
+.container_sauces_img {
+  margin: 50px 0;
 }
+
 /*SAUCES*/
 
 /*DRINKS*/
@@ -211,15 +295,15 @@ img:hover {
 }
 
 .wrapper_tea_coffee {
-  width: 535px;
+  width: 510px;
 }
 
 .coffee_tea {
   font-family: Rye;
   border-bottom: var(--border-set);
   font-size: 33px;
-  line-height: 30px;
-  width: 50px;
+  line-height: 40px;
+  width: 40px;
 }
 
 .container_coctails,
@@ -229,8 +313,357 @@ img:hover {
   justify-content: center;
 }
 
-.wrapper_coctails,
+.container_coctails {
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
 .wrapper_tea_coffee {
   margin: 0 30px;
 }
+
+.coctail_img {
+  display: none;
+}
+
+.drinks,
+.coffee_tea {
+  margin: 20px auto;
+}
 /*DRINKS*/
+
+/*MOBILE PHONES*/
+@media screen and (max-width: 1300px) {
+  .pork_ribs {
+    width: 900px;
+    height: 700px;
+    left: 110px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper_dishes > h1,
+  .heading_menu {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .container_imgs {
+    height: 600px;
+  }
+
+  .composition {
+    font-size: 17px;
+  }
+
+  .name_price {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .pork_ribs {
+    width: 800px;
+    height: 650px;
+    left: 140px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pork_ribs {
+    width: 700px;
+    height: 550px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    position: relative;
+    background-image: url(/images/dish.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1100px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-background);
+    opacity: 0.7;
+  }
+
+  main {
+    margin: 20px 20px;
+    padding: 0;
+  }
+
+  .nav_item {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .container_imgs {
+    display: none;
+  }
+
+  .container_dishes,
+  .container_pizza,
+  .container_coctails {
+    flex-direction: column-reverse;
+  }
+
+  .salad_img {
+    padding: 0 0 100px 0;
+    margin: 0 auto;
+  }
+
+  .container_dishes {
+    margin-bottom: 50px;
+  }
+
+  .container_salad {
+    flex-direction: column;
+    margin-bottom: 200px;
+  }
+
+  .header,
+  .logo {
+    color: var(--color-font);
+  }
+
+  .logo,
+  .container_cover {
+    position: relative;
+  }
+
+  .logo,
+  .heading_menu {
+    border-bottom: var(--border-set);
+  }
+
+  .heading_menu {
+    font-size: 40px;
+    line-height: 55px;
+    width: 55px;
+  }
+
+  .dish_img {
+    display: none;
+  }
+
+  .logo {
+    border-bottom: var(--border-par);
+  }
+
+  .container_logo > a {
+    font-size: 45px;
+    line-height: 55px;
+    width: 110px;
+    margin-top: 20px;
+  }
+
+  .wrapper_header {
+    display: block;
+  }
+
+  .wrapper_cover {
+    margin: 50px 0 0 0;
+  }
+
+  .text_cover {
+    margin: 50px 50px 0 50px;
+    font-size: 40px;
+    line-height: 60px;
+    max-width: 900px;
+  }
+
+  .pizza_img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 170px;
+  }
+
+  .pizza_pic {
+    width: 400px;
+    height: 600px;
+  }
+
+  .container_pizza {
+    margin-bottom: 50px;
+  }
+
+  .coctail_img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .coctail {
+    width: 200px;
+    height: 350px;
+  }
+
+  .composition {
+    font-family: Sahitya;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  
+  .name_price {
+    font-family: Sahitya;
+    font-size: 24px;
+    line-height: 37px;
+  }
+
+  .dishes_img {
+    padding: 0;
+  }
+
+  .container_sauces {
+    align-items: inherit;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .text_cover {
+  font-size: 35px;
+  line-height: 55px;
+}
+}
+
+@media screen and (max-width: 700px) {
+
+  .pizza_pic {
+    width: 250px;
+    height: 400px;
+  }
+
+  .container_pizza {
+    margin-bottom: 0;
+  }
+
+  .salad, .main_dish {
+    width: 250px;
+    height: 250px;
+  }
+
+  .container_salad {
+    margin-bottom: 160px;
+  }
+
+  .sauces_img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .coctail {
+    width: 180px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .header {
+    height: 900px;
+  }
+
+  .text_cover {
+  font-size: 23px;
+  line-height: 40px;
+  }
+
+  .heading_menu, .wrapper_dishes > h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .coffee_tea {
+    font-size: 25px;
+    line-height: 30px;
+    width: 25px;
+}
+
+.heading_coctails {
+  font-size: 30px;
+    line-height: 35px;
+    width: 50px;
+}
+
+.container_logo > a {
+  font-size: 35px;
+  line-height: 45px;
+  width: 85px;
+}
+
+.name_price {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.composition {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.img_sauce_margin {
+  margin-left: 177px;
+}
+
+.container_sauces_img {
+  margin: 0;
+}
+
+.wrapper_coctails, .wrapper_tea_coffee {
+  margin: 0;
+}
+
+.container_coffee_tea {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper_tea_coffee {
+  width: 100%;
+}
+
+.container_drinks {
+  margin: 50px 0;
+}
+
+.container_salad {
+  margin-bottom: 100px;
+}
+
+.container_pizza {
+  padding-bottom: 50px;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+.pizza_img {
+  margin-bottom: 150px;
+}
+
+.text_cover {
+  margin: 50px 20px 0 20px;
+  font-size: 21px;
+  line-height: 35px;
+}
+
+.container_dishes {
+  margin-bottom: 20px;
+}
+
+.sauces_img {
+  width: 300px;
+  height: 200px;
+}
+}
