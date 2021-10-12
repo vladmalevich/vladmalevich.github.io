@@ -172,10 +172,19 @@
 /*FORM*/
 
 /*MOBILE PHONES*/
+@media screen and (max-width: 1000px) {
+
+.name {
+  display: block;
+  display: flex;
+}
+}
+
 @media screen and (max-width: 768px) {
 
   .name {
     margin-top: 20px;
+    justify-content: center;
   }
   
   .name,
