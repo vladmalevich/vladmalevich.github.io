@@ -61,9 +61,13 @@
   cursor: pointer;
 }
 
-.gallery_text {
+.gallery_text,
+.gallery_heading {
   margin: 0 auto;
   text-align: center;
+}
+
+.gallery_text {
   font-family: Sahitya;
   font-size: 36px;
   line-height: 56px;
@@ -71,8 +75,6 @@
 }
 
 .gallery_heading {
-  margin: 0 auto;
-  text-align: center;
   font-family: Rye;
   font-size: 48px;
   line-height: 50px;
@@ -108,7 +110,7 @@
   text-align: center;
   font-family: Rye;
   font-size: 48px;
-  line-height: 50px;
+  line-height: 55px;
 }
 
 .line_indent,
@@ -173,20 +175,17 @@
 
 /*MOBILE PHONES*/
 @media screen and (max-width: 1000px) {
-
-.name {
-  display: block;
-  display: flex;
-}
+  .name {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
   .name {
     margin-top: 20px;
     justify-content: center;
   }
-  
+
   .name,
   .welcome,
   .welcome_heading {

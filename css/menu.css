@@ -12,7 +12,6 @@ img:hover {
   display: flex;
   flex-direction: column;
   height: 830px;
-  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -24,7 +23,8 @@ img:hover {
 
 .navigation_menu,
 .container_logo,
-.logo {
+.logo,
+.title_menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,8 @@ img:hover {
 }
 
 .nav_item,
-.logo {
+.logo,
+.title_menu {
   color: var(--color-background);
   text-decoration: none;
 }
@@ -50,12 +51,17 @@ img:hover {
   line-height: 28px;
 }
 
-.nav_item:hover {
-  text-decoration: underline;
+.nav_item:hover,
+.logo:hover {
   color: var(--hover-nav-color);
 }
 
-.logo {
+.logo:hover {
+  border-bottom: var(--border-bottom-hover);
+}
+
+.logo,
+.title_menu {
   font-family: Rye;
   font-size: 30px;
   line-height: 40px;
@@ -71,6 +77,11 @@ img:hover {
 .navigation_menu li:nth-child(1) {
   text-decoration: underline;
 }
+
+.logo {
+  margin-left: 50px;
+}
+
 /*HEADER*/
 
 /*COVER*/
@@ -144,25 +155,27 @@ main {
   height: 861px;
 }
 
-.composition {
+.composition,
+.name_price {
   font-family: Sahitya;
+}
+
+.composition {
   font-size: 20px;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .name_price {
-  font-family: Sahitya;
   font-size: 24px;
   line-height: 37px;
-}
-
-.name_price {
   display: flex;
   justify-content: space-between;
-  font-weight: 100;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
+.price_list > li {
+  margin-bottom: 20px;
+}
 /*PIZZA*/
 
 /*SALADS*/
@@ -210,7 +223,6 @@ main {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  margin-bottom: 8px;
 }
 
 .heading_dish {
@@ -262,12 +274,14 @@ main {
 
 /*SAUCES*/
 
-.container_sauces, .wrapper_sauces {
+.container_sauces,
+.wrapper_sauces {
   display: flex;
   flex-direction: column;
 }
 
-.container_sauces_img, .wrapper_sauces {
+.container_sauces_img,
+.wrapper_sauces {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,15 +413,15 @@ main {
 
   main {
     margin: 20px 20px;
-    padding: 0;
   }
 
   .nav_item {
     font-size: 25px;
-    line-height: 50px;
+    line-height: 55px;
   }
 
-  .container_imgs {
+  .container_imgs,
+  .dish_img {
     display: none;
   }
 
@@ -432,16 +446,19 @@ main {
   }
 
   .header,
-  .logo {
+  .logo,
+  .title_menu {
     color: var(--color-font);
   }
 
   .logo,
+  .title_menu,
   .container_cover {
     position: relative;
   }
 
   .logo,
+  .title_menu,
   .heading_menu {
     border-bottom: var(--border-set);
   }
@@ -452,11 +469,8 @@ main {
     width: 55px;
   }
 
-  .dish_img {
-    display: none;
-  }
-
-  .logo {
+  .logo,
+  .title_menu {
     border-bottom: var(--border-par);
   }
 
@@ -483,8 +497,6 @@ main {
   }
 
   .pizza_img {
-    display: flex;
-    justify-content: center;
     padding: 0;
     margin-bottom: 170px;
   }
@@ -498,7 +510,8 @@ main {
     margin-bottom: 50px;
   }
 
-  .coctail_img {
+  .coctail_img,
+  .pizza_img {
     display: flex;
     justify-content: center;
   }
@@ -509,13 +522,11 @@ main {
   }
 
   .composition {
-    font-family: Sahitya;
     font-size: 20px;
     line-height: 35px;
   }
-  
+
   .name_price {
-    font-family: Sahitya;
     font-size: 24px;
     line-height: 37px;
   }
@@ -527,18 +538,21 @@ main {
   .container_sauces {
     align-items: inherit;
   }
+
+  .logo,
+  main {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
-
   .text_cover {
-  font-size: 35px;
-  line-height: 55px;
-}
+    font-size: 35px;
+    line-height: 55px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-
   .pizza_pic {
     width: 250px;
     height: 400px;
@@ -548,7 +562,8 @@ main {
     margin-bottom: 0;
   }
 
-  .salad, .main_dish {
+  .salad,
+  .main_dish {
     width: 250px;
     height: 250px;
   }
@@ -569,17 +584,17 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-
   .header {
     height: 900px;
   }
 
   .text_cover {
-  font-size: 23px;
-  line-height: 40px;
+    font-size: 23px;
+    line-height: 40px;
   }
 
-  .heading_menu, .wrapper_dishes > h1 {
+  .heading_menu,
+  .wrapper_dishes > h1 {
     font-size: 30px;
     line-height: 45px;
   }
@@ -588,82 +603,83 @@ main {
     font-size: 25px;
     line-height: 30px;
     width: 25px;
-}
+  }
 
-.heading_coctails {
-  font-size: 30px;
+  .heading_coctails {
+    font-size: 30px;
     line-height: 35px;
     width: 50px;
-}
+  }
 
-.container_logo > a {
-  font-size: 35px;
-  line-height: 45px;
-  width: 85px;
-}
+  .container_logo > a {
+    font-size: 35px;
+    line-height: 45px;
+    width: 85px;
+  }
 
-.name_price {
-  font-size: 20px;
-  line-height: 35px;
-}
+  .name_price {
+    font-size: 20px;
+    line-height: 35px;
+  }
 
-.composition {
-  font-size: 17px;
-  line-height: 30px;
-}
+  .composition {
+    font-size: 17px;
+    line-height: 30px;
+  }
 
-.img_sauce_margin {
-  margin-left: 177px;
-}
+  .img_sauce_margin {
+    margin-left: 177px;
+  }
 
-.container_sauces_img {
-  margin: 0;
-}
+  .wrapper_coctails,
+  .wrapper_tea_coffee,
+  .container_sauces_img {
+    margin: 0;
+  }
 
-.wrapper_coctails, .wrapper_tea_coffee {
-  margin: 0;
-}
+  .container_coffee_tea {
+    display: flex;
+    flex-direction: column;
+  }
 
-.container_coffee_tea {
-  display: flex;
-  flex-direction: column;
-}
+  .wrapper_tea_coffee {
+    width: 100%;
+  }
 
-.wrapper_tea_coffee {
-  width: 100%;
-}
+  .container_drinks {
+    margin: 50px 0;
+  }
 
-.container_drinks {
-  margin: 50px 0;
-}
+  .container_salad {
+    margin-bottom: 100px;
+  }
 
-.container_salad {
-  margin-bottom: 100px;
-}
-
-.container_pizza {
-  padding-bottom: 50px;
-}
+  .container_pizza {
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .pizza_img {
+    margin-bottom: 150px;
+  }
 
-.pizza_img {
-  margin-bottom: 150px;
-}
+  .text_cover {
+    margin: 50px 20px 0 20px;
+    font-size: 21px;
+    line-height: 35px;
+  }
 
-.text_cover {
-  margin: 50px 20px 0 20px;
-  font-size: 21px;
-  line-height: 35px;
-}
+  .container_dishes {
+    margin-bottom: 20px;
+  }
 
-.container_dishes {
-  margin-bottom: 20px;
-}
+  .sauces_img {
+    width: 300px;
+    height: 200px;
+  }
 
-.sauces_img {
-  width: 300px;
-  height: 200px;
-}
+  .container_salad {
+    margin: 50px 0 150px 0;
+  }
 }

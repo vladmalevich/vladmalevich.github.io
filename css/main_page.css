@@ -80,6 +80,11 @@
   text-decoration: none;
 }
 
+.name:hover {
+  color: var(--hover-nav-color);
+  border-bottom: var(--border-bottom-hover);
+}
+
 .welcome {
   font-size: 72px;
   line-height: 100px;
@@ -88,7 +93,7 @@
 .ready {
   font-size: 48px;
   line-height: 65px;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
 }
 /*HEADER*/
 
@@ -102,7 +107,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 409px;
+  height: 430px;
   flex: 3 1 100px;
   background: url(/icons/back_story.png) no-repeat 80% 0%,
     url(/icons/back_story2.png) no-repeat 10% 50%,
@@ -122,7 +127,7 @@
 
 .name_article,
 .desc {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .disc {
@@ -137,21 +142,23 @@
 
 .name_article,
 .disc {
-  font-size: 48px;
-  line-height: 75px;
+  font-size: 45px;
+  line-height: 60px;
 }
 
 .desc {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 25px;
   max-width: 670px;
+  padding: 0 20px;
 }
 
 .view {
   color: var(--color-background);
   text-decoration: none;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 35px;
+  line-height: 40px;
+  position: absolute;
 }
 
 .view:hover {
@@ -159,8 +166,16 @@
 }
 
 .link_underline {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   width: 180px;
   border-bottom: var(--border-set);
+  margin-top: 40px;
+}
+
+.link_underline:hover {
+  border-bottom: var(--border-hover);
 }
 
 .fish {
@@ -174,12 +189,17 @@
 /*OUR STORY*/
 
 /*RECIPES COOK*/
+
+.wrapper_heading,
 .container_recipes_cook {
   position: relative;
+  display: flex;
+}
+
+.container_recipes_cook {
   background: url(../images/recipes.jpg);
   background-size: cover;
   height: 516px;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -190,8 +210,6 @@
 }
 
 .wrapper_heading {
-  position: relative;
-  display: flex;
   flex-direction: column;
   color: var(--color-font);
 }
@@ -289,8 +307,13 @@
 
 /*MOBILE PHONES*/
 @media screen and (max-width: 1000px) {
-  
-  .name {
+  .header_main {
+    background-size: cover;
+  }
+
+  .name,
+  .fish_img,
+  .menu_imgs {
     display: none;
   }
 
@@ -307,11 +330,6 @@
 
   .heading_name {
     width: 120px;
-  }
-
-  .fish_img,
-  .menu_imgs {
-    display: none;
   }
 
   .wrapper_story,
@@ -351,13 +369,14 @@
   }
 
   .link_underline {
+    margin-top: 60px;
     width: 130px;
   }
 
   .desc {
     font-size: 30px;
     line-height: 45px;
-    margin: 0 10px 20px 10px;
+    margin: 0 10px;
   }
 
   .wrapper_menu {
@@ -373,6 +392,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .universal_background::before {
+    opacity: 0.5;
+  }
+
   .ready {
     font-size: 40px;
     line-height: 50px;

@@ -3,25 +3,24 @@
 }
 
 @media screen and (max-width: 1000px) {
-
-.container_nav {
+  .container_nav {
     display: block;
   }
 
-#nav_toggle {
+  #nav_toggle {
     opacity: 0;
   }
- 
+
   .nav_button {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 20px;
     right: 20px;
     width: 35px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
   }
 
   .nav_button > span,
@@ -34,70 +33,71 @@
     background-color: var(--color-font);
   }
   .nav_button > span::before {
-    content: '';
+    content: "";
     top: -10px;
   }
   .nav_button > span::after {
-    content: '';
+    content: "";
     top: 10px;
   }
 
-.nav {
-  display: block;
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  right: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: var(--color-font);
-}
+  .nav {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: var(--color-font);
+    z-index: 2;
+  }
 
-.nav_items {
-  display: block;
-  padding: 12px 24px;
-  color: var(--color-background);
-  font-size: 25px;
-  margin-left: 0;
-}
-.nav_items:hover {
-  background-color: var(--color-background);
-  color: var(--color-font);
-  text-decoration: none;
-}
+  .nav_items {
+    display: block;
+    padding: 12px 24px;
+    color: var(--color-background);
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .nav_items:hover {
+    background-color: var(--color-background);
+    color: var(--color-font);
+    text-decoration: none;
+  }
 
-#nav_toggle:checked ~ .nav_button > span {
-  transform: rotate(45deg);
-  background-color: var(--color-background);
-}
-#nav_toggle:checked ~ .nav_button > span::before {
-  top: 0;
-  transform: rotate(0);
-  background-color: var(--color-background);
-}
-#nav_toggle:checked ~ .nav_button > span::after {
-  top: 0;
-  transform: rotate(90deg);
-  background-color: var(--color-background);
-}
-#nav_toggle:checked ~ .nav {
-  visibility: visible;
-  right: 0;
-}
+  #nav_toggle:checked ~ .nav_button > span {
+    transform: rotate(45deg);
+    background-color: var(--color-background);
+  }
+  #nav_toggle:checked ~ .nav_button > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: var(--color-background);
+  }
+  #nav_toggle:checked ~ .nav_button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: var(--color-background);
+  }
+  #nav_toggle:checked ~ .nav {
+    visibility: visible;
+    right: 0;
+  }
 
-.nav_button > span,
-.nav_button > span::before,
-.nav_button > span::after {
-  transition-duration: .25s;
-}
-.nav {
-  transition-duration: .25s;
-}
-.nav_items {
-  transition-duration: .25s;
-}
+  .nav_button > span,
+  .nav_button > span::before,
+  .nav_button > span::after {
+    transition-duration: 0.25s;
+  }
+  .nav {
+    transition-duration: 0.25s;
+  }
+  .nav_items {
+    transition-duration: 0.25s;
+  }
 }

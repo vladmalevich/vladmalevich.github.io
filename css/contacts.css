@@ -24,21 +24,9 @@
   margin-top: 120px;
 }
 
-.nav_items {
-  color: var(--color-font);
-  position: relative;
-  margin-left: 35px;
-  text-decoration: none;
-  font-family: Sahitya;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.nav_items:hover {
-  text-decoration: underline;
+.name:hover {
   color: var(--hover-nav-color);
+  border-bottom: var(--border-bottom-hover);
 }
 
 .container_nav {
@@ -83,7 +71,7 @@
   font-size: 30px;
   line-height: 47px;
   color: var(--color-font);
-  margin: 25px 0 0 170px;
+  margin: 25px 0 0 100px;
 }
 
 .contacts_tel {
@@ -107,17 +95,13 @@
 
 /*MOBILE PHONES*/
 @media screen and (max-width: 768px) {
-
-  .name {
+  .name,
+  .container_contacts {
     margin-top: 20px;
   }
 
   .wrapper_contacts {
     margin-left: 0;
-  }
-
-  .container_contacts {
-    margin-top: 20px;
   }
 
   .heading_contacts {
@@ -143,6 +127,10 @@
 
   .contact {
     width: 190px;
+  }
+
+  .header {
+    height: 500px;
   }
 }
 
