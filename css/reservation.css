@@ -12,7 +12,7 @@
   margin-bottom: 50px;
 }
 
-.welcome_heading {
+.heading_name {
   font-family: Rye;
   color: var(--color-font);
   font-size: 70px;
@@ -23,7 +23,7 @@
   text-decoration: underline;
 }
 
-.line_reservation {
+.line_name {
   display: flex;
   width: 180px;
   margin: 0 auto;
@@ -62,7 +62,7 @@
 }
 
 .gallery_text,
-.gallery_heading {
+.gallery_name {
   margin: 0 auto;
   text-align: center;
 }
@@ -74,7 +74,7 @@
   max-width: 1200px;
 }
 
-.gallery_heading {
+.gallery_name {
   font-family: Rye;
   font-size: 48px;
   line-height: 50px;
@@ -105,7 +105,7 @@
   padding-top: 30px;
 }
 
-.form_heading {
+.form_name {
   margin: 0 auto;
   text-align: center;
   font-family: Rye;
@@ -171,6 +171,11 @@
 #date:hover {
   cursor: pointer;
 }
+
+.button > input:hover {
+border: var(--color-font) 2px solid;
+color: var(--color-font);
+}
 /*FORM*/
 
 /*MOBILE PHONES*/
@@ -187,8 +192,8 @@
   }
 
   .name,
-  .welcome,
-  .welcome_heading {
+  .welcome_name,
+  .heading_name {
     font-size: 50px;
     line-height: 60px;
   }
@@ -197,7 +202,7 @@
     margin: 300px 0 0 5px;
   }
 
-  .line_reservation {
+  .line_name {
     width: 150px;
   }
 
@@ -212,7 +217,7 @@
     line-height: 30px;
   }
 
-  .form_heading {
+  .form_name {
     font-size: 40px;
     line-height: 45px;
   }
@@ -237,9 +242,9 @@
 
 @media screen and (max-width: 608px) {
   .name,
-  .welcome,
-  .welcome_heading,
-  .form_heading {
+  .welcome_name,
+  .heading_name,
+  .form_name {
     font-size: 35px;
     line-height: 45px;
   }
@@ -249,7 +254,7 @@
     flex-direction: column;
   }
 
-  .gallery_heading {
+  .gallery_name {
     font-size: 40px;
     line-height: 50px;
   }

@@ -20,7 +20,7 @@
 .nav,
 .container_welcome,
 .container_name,
-.heading_name,
+.main_name,
 .name {
   display: flex;
   align-items: center;
@@ -47,24 +47,24 @@
   padding-top: 15px;
 }
 
-.heading_name,
+.main_name,
 .name,
-.welcome,
-.ready {
+.welcome_name,
+.ready_name {
   color: var(--color-font);
 }
 
-.heading_name,
+.main_name,
 .name {
   font-family: Rye;
 }
 
-.welcome,
-.ready {
+.welcome_name,
+.ready_name {
   font-family: Sahitya;
 }
 
-.heading_name {
+.main_name {
   font-size: 80px;
   line-height: 90px;
   border-bottom: var(--border-par);
@@ -85,12 +85,12 @@
   border-bottom: var(--border-bottom-hover);
 }
 
-.welcome {
+.welcome_name {
   font-size: 72px;
   line-height: 100px;
 }
 
-.ready {
+.ready_name {
   font-size: 48px;
   line-height: 65px;
   letter-spacing: 4px;
@@ -118,42 +118,42 @@
   padding: 15px 111px 17px 0;
 }
 
-.disc,
-.name_article,
-.desc,
-.view {
+.disc_name,
+.article_name,
+.desc_name,
+.view_name {
   text-align: center;
 }
 
-.name_article,
-.desc {
+.article_name,
+.desc_name {
   margin-bottom: 40px;
 }
 
-.disc {
+.disc_name {
   font-family: Rye;
 }
 
-.name_article,
-.desc,
-.view {
+.article_name,
+.desc_name,
+.view_name {
   font-family: Sahitya;
 }
 
-.name_article,
-.disc {
+.article_name,
+.disc_name {
   font-size: 45px;
   line-height: 60px;
 }
 
-.desc {
+.desc_name {
   font-size: 20px;
   line-height: 25px;
   max-width: 670px;
   padding: 0 20px;
 }
 
-.view {
+.view_name {
   color: var(--color-background);
   text-decoration: none;
   font-size: 35px;
@@ -161,7 +161,7 @@
   position: absolute;
 }
 
-.view:hover {
+.view_name:hover {
   color: var(--hover-view-color);
 }
 
@@ -317,18 +317,18 @@
     display: none;
   }
 
-  .ready,
+  .ready_name,
   .reservation {
     margin-top: 30px;
   }
 
-  .welcome,
-  .heading_name {
+  .welcome_name,
+  .main_name {
     font-size: 50px;
     line-height: 70px;
   }
 
-  .heading_name {
+  .main_name {
     width: 120px;
   }
 
@@ -352,17 +352,17 @@
     align-items: center;
   }
 
-  .disc,
-  .name_article {
+  .disc_name,
+  .article_name {
     font-size: 40px;
     line-height: 55px;
   }
 
-  .name_article {
+  .article_name {
     margin-bottom: 15px;
   }
 
-  .view {
+  .view_name {
     font-size: 30px;
     line-height: 40px;
     font-weight: bold;
@@ -373,7 +373,7 @@
     width: 130px;
   }
 
-  .desc {
+  .desc_name {
     font-size: 30px;
     line-height: 45px;
     margin: 0 10px;
@@ -396,7 +396,7 @@
     opacity: 0.5;
   }
 
-  .ready {
+  .ready_name {
     font-size: 40px;
     line-height: 50px;
   }
@@ -407,7 +407,7 @@
     height: 450px;
   }
 
-  .desc {
+  .desc_name {
     font-size: 20px;
     line-height: 30px;
   }

@@ -24,7 +24,7 @@ img:hover {
 .navigation_menu,
 .container_logo,
 .logo,
-.title_menu {
+.title_name {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ img:hover {
 
 .nav_item,
 .logo,
-.title_menu {
+.title_name {
   color: var(--color-background);
   text-decoration: none;
 }
@@ -61,7 +61,7 @@ img:hover {
 }
 
 .logo,
-.title_menu {
+.title_name {
   font-family: Rye;
   font-size: 30px;
   line-height: 40px;
@@ -91,7 +91,7 @@ main {
 
 .container_cover,
 .wrapper_cover,
-.heading_menu,
+.heading_name,
 .text_cover {
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@ main {
   max-width: 600px;
 }
 
-.heading_menu {
+.heading_name {
   font-family: Rye;
   font-size: 48px;
   line-height: 60px;
@@ -225,7 +225,7 @@ main {
   font-weight: bold;
 }
 
-.heading_dish {
+.dish_name {
   font-family: Rye;
   font-size: 48px;
   line-height: 60px;
@@ -287,7 +287,7 @@ main {
   align-items: center;
 }
 
-.img_sauce_margin {
+.sauce_margin {
   margin-left: 350px;
 }
 
@@ -303,8 +303,8 @@ main {
 }
 
 .container_coffee_tea,
-.drinks,
-.coffee_tea {
+.drinks_name,
+.coffee_tea_name {
   margin-bottom: 50px;
 }
 
@@ -312,7 +312,7 @@ main {
   width: 510px;
 }
 
-.coffee_tea {
+.coffee_tea_name {
   font-family: Rye;
   border-bottom: var(--border-set);
   font-size: 33px;
@@ -322,14 +322,9 @@ main {
 
 .container_coctails,
 .container_coffee_tea,
-.coffee_tea {
+.coffee_tea_name {
   display: flex;
   justify-content: center;
-}
-
-.container_coctails {
-  justify-content: space-around;
-  margin-bottom: 30px;
 }
 
 .wrapper_tea_coffee {
@@ -340,9 +335,17 @@ main {
   display: none;
 }
 
-.drinks,
-.coffee_tea {
+.drinks_name,
+.coffee_tea_name {
   margin: 20px auto;
+}
+
+.wrapper_coctails {
+  max-width: 500px;
+}
+
+.coctails_padding {
+  padding-right: 100px;
 }
 /*DRINKS*/
 
@@ -357,7 +360,7 @@ main {
 
 @media screen and (max-width: 1200px) {
   .wrapper_dishes > h1,
-  .heading_menu {
+  .heading_name {
     font-size: 35px;
     line-height: 45px;
   }
@@ -411,10 +414,6 @@ main {
     opacity: 0.7;
   }
 
-  main {
-    margin: 20px 20px;
-  }
-
   .nav_item {
     font-size: 25px;
     line-height: 55px;
@@ -447,30 +446,30 @@ main {
 
   .header,
   .logo,
-  .title_menu {
+  .title_name {
     color: var(--color-font);
   }
 
   .logo,
-  .title_menu,
+  .title_name,
   .container_cover {
     position: relative;
   }
 
   .logo,
-  .title_menu,
-  .heading_menu {
+  .title_name,
+  .heading_name {
     border-bottom: var(--border-set);
   }
 
-  .heading_menu {
+  .heading_name {
     font-size: 40px;
     line-height: 55px;
     width: 55px;
   }
 
   .logo,
-  .title_menu {
+  .title_name {
     border-bottom: var(--border-par);
   }
 
@@ -485,12 +484,12 @@ main {
     display: block;
   }
 
-  .wrapper_cover {
+  .wrapper_cover, .wrapper_pizza {
     margin: 50px 0 0 0;
   }
 
   .text_cover {
-    margin: 50px 50px 0 50px;
+    margin: 50px 30px 0 30px;
     font-size: 40px;
     line-height: 60px;
     max-width: 900px;
@@ -543,6 +542,22 @@ main {
   main {
     margin-left: 0;
   }
+
+  .container_coctails {
+    align-items: center;
+  }
+
+  .coctails_padding {
+    padding-right: 0;
+  }
+
+  .wrapper_coctails {
+    max-width: 900px;
+  }
+
+  main {
+    padding: 0 20px;
+}
 }
 
 @media screen and (max-width: 900px) {
@@ -553,33 +568,42 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-  .pizza_pic {
-    width: 250px;
-    height: 400px;
+
+  .text_cover {
+    font-size: 30px;
+    line-height: 50px;
   }
 
   .container_pizza {
     margin-bottom: 0;
   }
 
-  .salad,
-  .main_dish {
-    width: 250px;
-    height: 250px;
+  .coffee_tea_margin {
+    margin-left: 100px;
   }
 
-  .container_salad {
-    margin-bottom: 160px;
+  .pizza_pic {
+    width: 400px;
+    height: 600px;
+  }
+
+  .salad,
+  .main_dish {
+    width: 400px;
+    height: 400px;
   }
 
   .sauces_img {
-    width: 400px;
-    height: 250px;
+    width: 550px;
+    height: 350px;
   }
 
-  .coctail {
-    width: 180px;
-    height: 300px;
+  .container_sauces_img {
+    margin: 0;
+  }
+
+  .pizza_img {
+    margin-bottom: 200px;
   }
 }
 
@@ -593,19 +617,40 @@ main {
     line-height: 40px;
   }
 
-  .heading_menu,
+  .pizza_pic {
+    width: 250px;
+    height: 400px;
+  }
+
+  .salad,
+  .main_dish {
+    width: 250px;
+    height: 250px;
+  }
+
+  .sauces_img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .coctail {
+    width: 180px;
+    height: 300px;
+  }
+
+  .heading_name,
   .wrapper_dishes > h1 {
     font-size: 30px;
     line-height: 45px;
   }
 
-  .coffee_tea {
+  .coffee_tea_name {
     font-size: 25px;
     line-height: 30px;
     width: 25px;
   }
 
-  .heading_coctails {
+  .coctails_name {
     font-size: 30px;
     line-height: 35px;
     width: 50px;
@@ -627,7 +672,7 @@ main {
     line-height: 30px;
   }
 
-  .img_sauce_margin {
+  .sauce_margin {
     margin-left: 177px;
   }
 
@@ -656,6 +701,10 @@ main {
 
   .container_pizza {
     padding-bottom: 50px;
+  }
+
+  .coffee_tea_margin {
+    margin-left: 177px;
   }
 }
 
