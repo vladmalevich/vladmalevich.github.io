@@ -24,9 +24,16 @@
   border-top: var(--border-par);
 }
 
-.navigation,
+/* .navigation, */
 .container_name,
 .footer_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +100,12 @@
   }
 
   .navigation {
-    visibility: hidden;
+    display: none;
+  }
+
+  .footer_name {
+    margin-top: 10px;
+    margin-bottom: 60px;
   }
 }
 
